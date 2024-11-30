@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman - Guess the word</title>
+    <link rel="stylesheet" href="gra.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Hangman</h1>
+        <p>Try to guess the hidden word!</p>
+        <canvas id="hangman-canvas" width="200" height="300"></canvas>
+        <div id="word-display">_ _ _ _ _</div>
+        <p> <span id="attempts-left">5</span></p>
+        <input type="text" id="guess-input" maxlength="1" placeholder=" ">
+        <button id="guess-button">Check</button>
+        <p id="message"></p>
+        <button id="restart" style="display:none;">Try again</button>
+        <script src="gra.js"></script>
+    </div>
+</body>
+</html>
